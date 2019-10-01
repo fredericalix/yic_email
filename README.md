@@ -13,11 +13,17 @@ Configuration by Environment variables
 ``` sh
     RABBITMQ_URI = "amqps://guest:guest@localhost:5672"
     EMAIL_FROM="no-reply@youritcity.io"
-```
+    MJ_APIKEY_PUBLIC="MJ_APIKEY_PUBLIC"
+    MJ_APIKEY_PRIVATE="MJ_APIKEY_PRIVATE"
 
+```
+## Mailjet Account
+
+You' ll need to have an Mailjet account to send emails and generate API keys
+Go to [Mailjet](https://dev.mailjet.com)
 ## Compile & run
 
-It use [dep](https://github.com/golang/dep) to handler dependancy.
+It use [go modules](https://blog.golang.org/using-go-moduleshttps://blog.golang.org/using-go-modules) to handler dependancy.
 
 ```sh
     go build
